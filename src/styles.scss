@@ -1,1 +1,368 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./styles/overwrite.scss");
+
+.g-5,
+.gx-5 {
+  --bs-gutter-x: 8em !important;
+}
+
+:root {
+  --text-on-white: #231f20;
+  --text-on-white-blur: #bcbec0;
+  --container-padding: 4.5rem;
+  --black-bg: #414042;
+  --text-on-black: #ffffff;
+  --input-font-size: 16px;
+}
+
+.nesto-section {
+  margin-top: 3.5rem;
+  padding-bottom: 7.5rem;
+
+  &__title {
+    font-size: 2.675rem;
+    font-weight: 100;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 3.75rem;
+  }
+
+  &__title2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+  }
+
+  &__sea-all {
+    margin-top: 7.5rem;
+    text-align: end;
+    span {
+      padding: 0 0 8px 0px;
+      border-bottom: 1px solid var(--text-on-white);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.75rem;
+  }
+
+  &__sub-title {
+    font-weight: bold;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+
+  &__nav {
+    margin-left: 3.625rem;
+    margin-right: 3.625rem;
+    flex-grow: 1;
+
+    .nav-item {
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0em;
+      // text-align: center;
+      color: var(--text-on-white-blur);
+      text-transform: uppercase;
+
+      &.active {
+        color: var(--text-on-white);
+      }
+    }
+  }
+
+  &__carousel {
+    position: relative;
+
+    .see-all-btn {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      color: var(--text-on-white);
+      text-decoration: unset;
+      border-bottom: 1px solid var(--text-on-white);
+      font-size: 0.875rem;
+      line-height: 16.45px;
+    }
+  }
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  content: " ";
+  height: 1px;
+  background-color: var(--text-on-white);
+}
+
+.header {
+  margin-bottom: 50px;
+
+  &__logo {
+    height: 80px;
+    width: 127px;
+    left: 0px;
+    margin-top: 38px;
+  }
+
+  &__container {
+    height: 186px;
+    display: flex;
+    border-bottom: 1px solid var(--text-on-white);
+  }
+
+  &__nav {
+    margin-top: 54px;
+    margin-left: auto;
+
+    .nav-item {
+      margin-left: 2rem;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--text-on-white);
+      text-decoration: unset;
+    }
+  }
+}
+
+.home-landing {
+  &__title {
+    margin-bottom: 2.375rem;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+    width: 70%;
+    margin-top: 115px;
+  }
+
+  &__left-side {
+    padding-left: var(--container-padding);
+    padding-right: 4.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__left-nav {
+    .nav-item {
+      font-size: 1.5em;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: right;
+      margin-top: 1em;
+      color: #bcbec0;
+
+      &.active {
+        color: var(--text-on-white);
+      }
+    }
+  }
+
+  &__right-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: var(--container-padding);
+    margin-bottom: 2rem;
+
+    .nav-item {
+      margin-left: 8rem;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #bcbec0;
+
+      &.active {
+        color: var(--text-on-white);
+      }
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.product-card {
+  &__image {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-top: 3rem;
+    text-align: end;
+  }
+
+  &__price {
+    text-align: end;
+  }
+}
+
+@media (min-width: 1441px) {
+  .product-card {
+    &__image {
+      max-height: 480px;
+    }
+  }
+}
+
+.nesto-btn {
+  background-color: unset;
+  border-radius: 0px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid var(--text-on-white);
+  color: var(--text-on-white);
+}
+
+.nesto-link {
+  color: var(--text-on-white);
+  font-size: 1.125rem;
+  line-height: 21.15px;
+  text-decoration: unset !important;
+  border-bottom: 1px solid var(--text-on-white);
+  padding-bottom: 8px;
+}
+
+.nesto-image {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.nesto-input {
+  position: relative;
+
+  input,
+  textarea {
+    background: none;
+    color: var(--text-on-white);
+    font-size: var(--input-font-size);
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--text-on-white);
+    &:focus {
+      outline: none;
+    }
+    &:focus ~ label,
+    &:valid ~ label {
+      top: 0px;
+      font-size: 8px;
+      color: var(--text-on-white);
+    }
+    &:focus ~ .bar:before {
+      width: 100%;
+    }
+  }
+
+  input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+
+  label {
+    color: var(--text-on-white);
+    font-size: var(--input-font-size);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &:before {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 0px;
+      position: absolute;
+      background: var(--text-on-white);
+      transition: 300ms ease all;
+      left: 0%;
+    }
+  }
+}
+
+.nesto-footer {
+  --text-on-white: #fff;
+  --input-font-size: 12px;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--black-bg);
+  color: var(--text-on-black);
+  font-size: 12px;
+
+  &__nav-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-family: Public Sans;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.005em;
+    display: block;
+  }
+
+  .nav-item {
+    font-weight: 100;
+    line-height: 14px;
+    letter-spacing: 0.005em;
+    font-style: thin;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .payment-list {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-right: 24px;
+    }
+  }
+}
