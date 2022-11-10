@@ -25,6 +25,10 @@
   padding-right: unset !important;
 }
 
+.reset-margin {
+  margin: unset !important;
+}
+
 .container-padding-left {
   padding-left: var(--container-padding) !important;
 }
@@ -35,6 +39,14 @@
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-62 {
+  margin-top: 3.875rem !important;
 }
 
 .mt-80 {
@@ -50,12 +62,20 @@
   margin-bottom: 3.5rem;
 }
 
+.mb-80 {
+  margin-bottom: 5rem !important;
+}
+
 .mb-16 {
   margin-bottom: 16px !important;
 }
 
 .mb-34 {
   margin-bottom: 2.125rem;
+}
+
+.pl-32 {
+  padding-left: 2rem !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,6 +103,11 @@
   line-height: 56.4px !important;
 }
 
+.text-42 {
+  font-size: 2.625rem !important;
+  line-height: 49.35px !important;
+}
+
 .text-36 {
   font-size: 2.25rem !important;
   line-height: 42.3px !important;
@@ -94,8 +119,16 @@
 }
 
 .text-14 {
-  font-size: 0.875 !important;
+  font-size: 0.875rem !important;
   line-height: 16.45px !important;
+}
+
+.text-12 {
+  font-size: 0.75rem !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
 }
 
 .fw-300 {
@@ -116,4 +149,9 @@
 
 .w-fit {
   width: fit-content !important;
+}
+
+.form-check-input:checked {
+  background-color: #111 !important;
+  border-color: #111 !important;
 }

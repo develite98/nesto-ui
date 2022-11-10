@@ -8,6 +8,7 @@
 :root {
   --text-on-white: #231f20;
   --text-on-white-blur: #bcbec0;
+  --text-grey: #bcbec0;
   --container-padding: 4.5rem;
   --black-bg: #414042;
   --text-on-black: #ffffff;
@@ -246,6 +247,13 @@
   padding: 8px 16px 8px 16px;
   border: 1px solid var(--text-on-white);
   color: var(--text-on-white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--text-on-black);
+    background-color: #231f20;
+  }
 }
 
 .nesto-link {
@@ -255,6 +263,7 @@
   text-decoration: unset !important;
   border-bottom: 1px solid var(--text-on-white);
   padding-bottom: 8px;
+  height: fit-content;
 }
 
 .nesto-image {
@@ -363,6 +372,97 @@
 
     a {
       margin-right: 24px;
+    }
+  }
+}
+
+.nesto-breadcrumb {
+  color: var(--text-on-white-blur);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+    text-decoration: unset;
+  }
+}
+
+.nesto-pagination {
+  display: flex;
+
+  .item {
+    margin-left: 32px;
+    text-decoration: unset;
+    color: var(--text-on-white-blur);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--text-on-white);
+    }
+
+    &.active {
+      color: var(--text-on-white);
+    }
+  }
+}
+
+.nesto-tag {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid var(--text-on-white);
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-left: 24px;
+
+  .icon {
+    margin-left: 10px;
+  }
+}
+
+.nesto-filter {
+  &__nav {
+    border-bottom: 1px solid var(--text-on-white);
+    margin: unset;
+
+    .item {
+      display: flex;
+      align-items: center;
+      color: var(--text-on-white-blur);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
+      font-size: 18px;
+
+      &.active {
+        color: var(--text-on-white);
+      }
+
+      &:hover {
+        color: var(--text-on-white);
+      }
+    }
+  }
+
+  &__filter {
+    .form-check {
+      margin-bottom: 16px;
+    }
+
+    .form-check-child {
+      padding-left: 36px;
+      max-height: 120px;
+      overflow: auto;
+
+      .form-check {
+        margin-bottom: 8px;
+      }
     }
   }
 }
