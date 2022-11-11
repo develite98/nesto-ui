@@ -41,6 +41,18 @@
   margin-left: auto;
 }
 
+.mt-unset {
+  margin-top: unset !important;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-50 {
   margin-top: 50px !important;
 }
@@ -68,6 +80,10 @@
 
 .mb-16 {
   margin-bottom: 16px !important;
+}
+
+.mb-18 {
+  margin-bottom: 18px !important;
 }
 
 .mb-34 {
@@ -113,9 +129,18 @@
   line-height: 42.3px !important;
 }
 
+.text-30 {
+  font-size: 1.875rem !important;
+}
+
 .text-24 {
   font-size: 1.5rem !important;
   line-height: 28.2px !important;
+}
+
+.text-16 {
+  font-size: 16px !important;
+  line-height: 26.16px !important;
 }
 
 .text-14 {
@@ -127,12 +152,20 @@
   font-size: 0.75rem !important;
 }
 
+.text-white-blur {
+  color: var(--text-on-white-blur);
+}
+
 .fw-100 {
   font-weight: 100 !important;
 }
 
 .fw-300 {
   font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
 }
 
 .fw-700 {
@@ -154,4 +187,13 @@
 .form-check-input:checked {
   background-color: #111 !important;
   border-color: #111 !important;
+}
+
+.form-select {
+  border: unset !important;
+  border-bottom: 1px solid var(--text-on-white) !important;
+  border-radius: unset !important;
+  padding-left: 0px !important;
+  font-size: 16px !important;
+  box-shadow: unset !important;
 }

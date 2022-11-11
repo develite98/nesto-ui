@@ -5,6 +5,7 @@ import { Router, Route, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
+import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 
 export const routes: Route[] = [
   {
@@ -14,6 +15,10 @@ export const routes: Route[] = [
   {
     path: 'product',
     component: ProductPageComponent,
+  },
+  {
+    path: 'product-detail',
+    component: ProductDetailPageComponent,
   },
   {
     path: '',
@@ -27,7 +32,12 @@ export const routes: Route[] = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ProductPageComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    ProductPageComponent,
+    HomeComponent,
+    ProductDetailPageComponent,
+  ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],

@@ -465,4 +465,31 @@
       }
     }
   }
+
+  &__collapse-btn {
+    .show-text {
+      display: block;
+    }
+
+    .hide-text {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .show-text {
+        display: none;
+      }
+
+      .hide-text {
+        display: block;
+      }
+    }
+  }
+}
+
+.product-detail {
+  &__right-side {
+    padding-right: var(--container-padding);
+    padding-top: 24px;
+  }
 }
