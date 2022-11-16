@@ -528,16 +528,6 @@
 }
 
 .row {
-  margin-right: unset !important;
-  margin-left: unset !important;
   padding-left: unset !important;
   padding-right: unset !important;
-
-  > div:first-child {
-    padding-left: 0 !important;
-  }
-
-  > div:last-child {
-    padding-right: 0 !important;
-  }
 }

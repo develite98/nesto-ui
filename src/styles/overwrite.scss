@@ -11,7 +11,15 @@
   }
 }
 
-.body {
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+body {
   font-family: Public Sans;
   font-size: 18px;
   font-weight: 300;
@@ -45,6 +53,10 @@
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
 
 .mt-50 {
