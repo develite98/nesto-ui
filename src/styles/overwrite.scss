@@ -162,6 +162,10 @@ body {
   color: var(--text-on-white-blur);
 }
 
+.reset-link {
+  text-decoration: unset;
+}
+
 .fw-100 {
   font-weight: 100 !important;
 }
@@ -180,6 +184,10 @@ body {
 
 .w-75 {
   width: 75%;
+}
+
+.w-85 {
+  width: 85%;
 }
 
 .w-416 {
@@ -202,6 +210,36 @@ body {
   padding-left: 0px !important;
   font-size: 16px !important;
   box-shadow: unset !important;
+}
+
+.accordion-button {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  border: unset !important;
+  padding: 36px 0px;
+}
+
+.accordion-body {
+  padding: 36px 0px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: unset;
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.accordion-button:focus {
+  box-shadow: unset;
+}
+
+.accordion-item {
+  border-top: 1px solid var(--text-on-white);
+  border-bottom: 1px solid var(--text-on-white);
+  border-right: unset;
+  border-left: unset;
 }
 
 .swiper-pagination {

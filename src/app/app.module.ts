@@ -7,6 +7,10 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
 import { ProductDetail2Component } from './product-detail2/product-detail2.component';
+import { AboutComponent } from './about/about.component';
+import { PartnershipComponent } from './partnership/partnership.component';
+import { CareerComponent } from './career/career.component';
+import { FaqComponent } from './faq/faq.component';
 
 export const routes: Route[] = [
   {
@@ -26,6 +30,18 @@ export const routes: Route[] = [
     component: ProductDetail2Component,
   },
   {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'faq',
+    component: FaqComponent,
+  },
+  {
+    path: 'career',
+    component: CareerComponent,
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
@@ -43,6 +59,10 @@ export const routes: Route[] = [
     HomeComponent,
     ProductDetailPageComponent,
     ProductDetail2Component,
+    AboutComponent,
+    PartnershipComponent,
+    CareerComponent,
+    FaqComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
