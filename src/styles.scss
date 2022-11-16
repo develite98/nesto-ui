@@ -502,6 +502,11 @@
     margin-bottom: 56px;
     position: relative;
 
+    &.--align-end {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     .explore-link {
       position: absolute;
       right: 0;

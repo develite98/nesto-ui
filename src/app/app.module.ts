@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
+import { ProductDetail2Component } from './product-detail2/product-detail2.component';
 
 export const routes: Route[] = [
   {
@@ -19,6 +20,10 @@ export const routes: Route[] = [
   {
     path: 'product-detail',
     component: ProductDetailPageComponent,
+  },
+  {
+    path: 'product-detail2',
+    component: ProductDetail2Component,
   },
   {
     path: '',
@@ -37,6 +42,7 @@ export const routes: Route[] = [
     ProductPageComponent,
     HomeComponent,
     ProductDetailPageComponent,
+    ProductDetail2Component,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
