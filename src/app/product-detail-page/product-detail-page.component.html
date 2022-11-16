@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="container-xxl">
+    <div class="nesto-container">
         <div class="header__container">
             <img class="header__logo" src="assets/images/logo.svg" alt="nesto-logo" />
 
@@ -15,13 +15,13 @@
 
 <!-- Filter / BREADCRUMB -->
 <div class="nesto-section">
-    <div class="container-xxl">
+    <div class="nesto-container">
         <span class="nesto-breadcrumb">
             <a href="#">HOME</a> / <a href="#">PRODUCT</a> / <a href="#">PRODUCT A</a>
         </span>
     </div>
 
-    <div class="container-xxl mt-62">
+    <div class="nesto-container mt-62">
         <div class="d-flex">
             <div class="flex-grow-1 row nesto-filter__nav">
                 <div class="col item active">
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="container-xxl collapse" id="collapseFilter">
+    <div class="nesto-container collapse" id="collapseFilter">
         <div class="row justify-content-start mt-50 nesto-filter__filter">
             <div class="col">
                 <div class="form-check">
@@ -294,58 +294,275 @@
 </div>
 
 <div class="nesto-section mt-unset">
-    <div class="container-xxl">
+    <div class="nesto-container">
         <h2 class="text-24 fw-300">PRODUCT DETAIL</h2>
     </div>
 
-    <div class="container-fluid mt-62">
-        <div class="row reset-padding justify-content-between">
+    <div class="nesto-container container-right mt-62">
+        <div class="row justify-content-between">
             <div class="col-7">
-                <div class="w-100">
-                    <img class="w-100" src="assets/images/home-landing.png" alt="home-landing" />
+                <div class="swiper swiper-container w-100">
+                    <div class="swiper-wrapper w-100">
+                        <div class="swiper-slide"> <img class="w-100" src="assets/images/home-landing.png"
+                                alt="home-landing" /></div>
+                        <div class="swiper-slide"> <img class="w-100" src="assets/images/home-landing.png"
+                                alt="home-landing" /></div>
+                        <div class="swiper-slide"> <img class="w-100" src="assets/images/home-landing.png"
+                                alt="home-landing" /></div>
+                    </div>
                 </div>
             </div>
 
             <div class="col-4">
-                <div class="product-detail__right-side">
-                    <p class="mb-16 text-16">Brand: Muuto</p>
+                <p class="mb-16 text-16">Brand: Muuto</p>
 
-                    <h1 class="text-30 fw-400 mb-16 text-uppercase">OUTLINE SOFA, 2 - seater</h1>
+                <h1 class="text-30 fw-400 mb-16 text-uppercase">OUTLINE SOFA, 2 - seater</h1>
 
-                    <p class="mb-34 text-white-blur">SKU: 95005</p>
+                <p class="mb-34 text-white-blur">SKU: 95005</p>
 
-                    <div class="d-flex justify-content-between align-items-end mb-18">
-                        <span>453,700,000đ</span> <span>Unit: piece</span>
-                    </div>
+                <div class="d-flex justify-content-between align-items-end mb-18">
+                    <span>453,700,000đ</span> <span>Unit: piece</span>
+                </div>
 
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
 
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
 
-                    <div class="d-flex align-items-center">
-                        <span>Quantity: </span>
-                        <div class="input-group ms-3" style="width: 125px;">
-                            <span class="input-group-text">-</span>
-                            <input type="number" class="form-control" placeholder="1" aria-label="1">
-                            <span class="input-group-text">+</span>
-                        </div>
+                <div class="d-flex align-items-center">
+                    <span>Quantity: </span>
+                    <div class="input-group ms-3" style="width: 125px;">
+                        <span class="input-group-text">-</span>
+                        <input type="number" class="form-control" placeholder="1" aria-label="1">
+                        <span class="input-group-text">+</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-xxl mt-50">
-        <p class="text-16">2 / 5</p>
+    <div class="nesto-container mt-50">
+        <div class="swiper-pagination text-16"></div>
     </div>
 </div>
+
+<div class="nesto-container">
+    <div class="separator"></div>
+</div>
+
+<!-- PRODUCT INFORMATION -->
+<section class="nesto-section">
+    <div class="nesto-container">
+        <div class="row ">
+            <div class="col-2">
+                <h3 class="text-uppercase text-24 fw-300">Product information</h3>
+            </div>
+
+            <div class="col-4">
+                <img class="w-100" src="assets/images/product-information.png" alt="product-information">
+            </div>
+
+            <div class="col-1">
+            </div>
+
+            <div class="col-5">
+                <div class="product-information__header">
+                    <strong>Designed by Muuto</strong>
+
+                    <a href="#" class="explore-link nesto-link">explore brand</a>
+                </div>
+
+                <div class="description fw-300 text-16">
+                    <p>Colour: Dark grey</p>
+                    <p>Seat and backrest: Upholstered, Kotex Daily D50</p>
+                    <p>Frame:Black painted metal</p>
+                    <p>Assembly: Fully assembled</p>
+                    <p>Stackable up to four chairs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="nesto-container">
+    <div class="separator"></div>
+</div>
+
+<!-- SIZE AND MEASURE -->
+<section class="nesto-section">
+    <div class="nesto-container">
+        <div class="row ">
+            <div class="col-2">
+                <h3 class="text-uppercase text-24 fw-300">Size &
+                    Measurement</h3>
+            </div>
+
+            <div class="col-4">
+                <img class="w-100" src="assets/images/mesure1.png" alt="measure-1">
+                <img class="w-100" src="assets/images/mesure2.png" alt="measure-1">
+            </div>
+
+            <div class="col-1">
+            </div>
+
+            <div class="col-3">
+                <div class="product-measure-info">
+                    <p>Height:</p>
+                    <p>71 cm</p>
+                </div>
+                <div class="product-measure-info">
+                    <p>Width:</p>
+                    <p>271 cm</p>
+                </div>
+                <div class="product-measure-info">
+                    <p>Depth:</p>
+                    <p>71 cm</p>
+                </div>
+                <div class="product-measure-info">
+                    <p>Seat Height:</p>
+                    <p>71 cm</p>
+                </div>
+                <div class="product-measure-info">
+                    <p>Seat Dept:</p>
+                    <p>51 cm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="nesto-container">
+    <div class="separator"></div>
+</div>
+
+<!-- GALLERY -->
+<section class="nesto-section">
+    <div class="nesto-container container-left">
+        <div class="row">
+            <div class="col-2">
+                ABC
+            </div>
+            <div class="col-10">
+                <img class="w-100" src="assets/images/gallery.png" alt="gallery">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="nesto-container">
+    <div class="separator"></div>
+</div>
+
+<!-- DOWNLOAD -->
+<section class="nesto-section">
+    <div class="nesto-container">
+        <div class="row">
+            <div class="col-7">
+                <h3 class="text-uppercase text-24 fw-300">Download</h3>
+            </div>
+
+            <div class="col-4">
+                <p><a href="#" class="nesto-link text-14">Product Sheet</a></p>
+                <p><a href="#" class="nesto-link text-14">Maintainance & Care</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="nesto-footer">
+    <div class="nesto-container">
+        <div class="row gx-3">
+            <div class="col-3 d-flex flex-column justify-content-between">
+                <img class="w-fit" src="assets/images/logo_on_dark.svg" alt="dark-logo" />
+
+                <nav class="nav-item">hello@nesto.vn </nav>
+
+                <nav class="nav-item">©2022, Nesto. All rights reserved. </nav>
+            </div>
+
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-5">
+                        <span class="nesto-footer__nav-title">CUSTOMER CARE</span>
+
+                        <nav class="nav-item">FAQ & Support</nav>
+                        <nav class="nav-item">Ordering & Shipping</nav>
+                        <nav class="nav-item">Returns & Exchanges</nav>
+                        <nav class="nav-item">Partnership</nav>
+                    </div>
+
+                    <div class="col-4">
+                        <span class="nesto-footer__nav-title">ABOUT</span>
+
+                        <nav class="nav-item">About</nav>
+                        <nav class="nav-item">Careers</nav>
+                        <nav class="nav-item">Blog</nav>
+                        <nav class="nav-item">Contact</nav>
+                    </div>
+
+                    <div class="col-3">
+                        <span class="nesto-footer__nav-title">CONNECT</span>
+
+                        <nav class="nav-item">Facebook</nav>
+                        <nav class="nav-item">Instagram</nav>
+                        <nav class="nav-item">Youtube</nav>
+                    </div>
+
+                    <div class="col-12 payment-list">
+                        <a><img src="assets/images/visa.svg" /></a>
+                        <a><img src="assets/images/master-card.svg" /></a>
+                        <a><img src="assets/images/jcb.svg" /></a>
+                        <a><img src="assets/images/paypal.svg" /></a>
+                        <a><img src="assets/images/momo.svg" /></a>
+                        <a><img src="assets/images/zalopay.svg" /></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-3">
+                <span class="nesto-footer__nav-title">Sign up FOR 200,000 OFF YOUR FIRST ORDER.</span>
+
+                <div class="nesto-input" style="margin-top: -10px;">
+                    <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Email/phone number</label>
+                </div>
+
+                <div class="nesto-input mt-1">
+                    <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Password</label>
+                </div>
+
+                <div class="nesto-input mt-1">
+                    <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Re-enter password</label>
+                </div>
+
+                <div class="mt-3 row align-items-center justify-content-between">
+                    <div class="col-6">
+                        <div class="nesto-input">
+                            <input type="text" required="required" /><span class="highlight"></span><span
+                                class="bar"></span>
+                            <label>Or sign up with Facebook</label>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <button class="nesto-btn w-100">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

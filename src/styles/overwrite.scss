@@ -19,12 +19,6 @@
   letter-spacing: 0em;
 }
 
-.row.reset-padding .col-5,
-.col-7 {
-  padding-left: unset !important;
-  padding-right: unset !important;
-}
-
 .reset-margin {
   margin: unset !important;
 }
@@ -196,4 +190,22 @@
   padding-left: 0px !important;
   font-size: 16px !important;
   box-shadow: unset !important;
+}
+
+.swiper-pagination {
+  position: unset !important;
+  text-align: unset !important;
+}
+
+.nesto-container {
+  margin-right: 72px;
+  margin-left: 72px;
+}
+
+.container-right {
+  margin-left: unset !important;
+}
+
+.container-left {
+  margin-right: unset !important;
 }

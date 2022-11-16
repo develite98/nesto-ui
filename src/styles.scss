@@ -13,6 +13,7 @@
   --black-bg: #414042;
   --text-on-black: #ffffff;
   --input-font-size: 16px;
+  --bs-gutter-x: 24px !important;
 }
 
 .nesto-section {
@@ -188,7 +189,6 @@
   &__right-nav {
     display: flex;
     justify-content: flex-end;
-    padding-right: var(--container-padding);
     margin-bottom: 2rem;
 
     .nav-item {
@@ -209,7 +209,7 @@
   &__img {
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 }
@@ -491,5 +491,53 @@
   &__right-side {
     padding-right: var(--container-padding);
     padding-top: 24px;
+  }
+}
+
+.product-information {
+  &__header {
+    padding: 0px 0px 24px 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--text-on-white);
+    margin-bottom: 56px;
+    position: relative;
+
+    .explore-link {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.product-measure-info {
+  padding: 8px 0px;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid var(--text-on-white);
+  align-items: center;
+  height: 55px;
+
+  p {
+    margin: unset;
+  }
+}
+
+.gallery-image-container {
+  margin-top: -30px;
+}
+
+.row {
+  margin-right: unset !important;
+  margin-left: unset !important;
+  padding-left: unset !important;
+  padding-right: unset !important;
+
+  > div:first-child {
+    padding-left: 0 !important;
+  }
+
+  > div:last-child {
+    padding-right: 0 !important;
   }
 }
