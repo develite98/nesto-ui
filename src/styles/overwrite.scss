@@ -56,6 +56,10 @@ body {
   margin-top: 16px;
 }
 
+.mt-24 {
+  margin-top: 24px;
+}
+
 .mt-32 {
   margin-top: 32px;
 }
@@ -145,6 +149,11 @@ body {
   line-height: 28.2px !important;
 }
 
+.text-20 {
+  font-size: 20px !important;
+  line-height: 28.2px !important;
+}
+
 .text-16 {
   font-size: 16px !important;
   line-height: 26.16px !important;
@@ -163,8 +172,13 @@ body {
   color: var(--text-on-white-blur);
 }
 
+.t-white {
+  color: var(--text-on-white);
+}
+
 .reset-link {
   text-decoration: unset;
+  display: block;
 }
 
 .fw-100 {
