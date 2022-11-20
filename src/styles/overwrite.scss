@@ -26,6 +26,7 @@ body {
   font-weight: 300;
   line-height: 21px;
   letter-spacing: 0em;
+  padding-right: unset !important;
 }
 
 .reset-margin {
@@ -46,6 +47,10 @@ body {
 
 .mt-unset {
   margin-top: unset !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
 }
 
 .mt-8 {
@@ -99,6 +104,10 @@ body {
 
 .mb-34 {
   margin-bottom: 2.125rem;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
 }
 
 .pl-32 {
@@ -173,8 +182,9 @@ body {
   font-size: 0.75rem !important;
 }
 
-.text-white-blur {
+.text-blur {
   color: var(--text-on-white-blur);
+  --text-on-white: var(--text-on-white-blur);
 }
 
 .t-white {
@@ -356,4 +366,25 @@ body {
 .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.gx-75 {
+  --bs-gutter-x: 75px !important;
+}
+
+.mat-icon {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-on-white);
 }
