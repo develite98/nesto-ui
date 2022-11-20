@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { PartnershipComponent } from './partnership/partnership.component';
 import { CareerComponent } from './career/career.component';
 import { FaqComponent } from './faq/faq.component';
+import { BlosComponent } from './blos/blos.component';
 
 export const routes: Route[] = [
   {
@@ -42,6 +43,10 @@ export const routes: Route[] = [
     component: CareerComponent,
   },
   {
+    path: 'blogs',
+    component: BlosComponent,
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
@@ -63,6 +68,7 @@ export const routes: Route[] = [
     PartnershipComponent,
     CareerComponent,
     FaqComponent,
+    BlosComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
