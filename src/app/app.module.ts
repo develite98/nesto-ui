@@ -47,6 +47,10 @@ export const routes: Route[] = [
     component: BlosComponent,
   },
   {
+    path: 'partner',
+    component: PartnershipComponent,
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
