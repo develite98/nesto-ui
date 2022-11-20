@@ -623,3 +623,15 @@
     color: var(--text-on-white);
   }
 }
+
+.product-card {
+  a {
+    text-decoration: unset;
+    color: var(--text-on-white);
+  }
+}
+
+span.currency {
+  vertical-align: super;
+  font-size: 14px;
+}
