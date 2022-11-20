@@ -1,3 +1,4 @@
+<!-- HEADER -->
 <div class="header">
     <div class="nesto-container">
         <div class="header__container">
@@ -7,11 +8,37 @@
                 <a class="nav-item"> login </a>
                 <a class="nav-item"> cart(0) </a>
                 <a class="nav-item"> <img src="assets/images/search.svg" /> </a>
-                <a class="nav-item"> <img src="assets/images/burger.svg" /> </a>
+                <a class="nav-item" data-bs-toggle="modal" data-bs-target="#headerMenu"> <img
+                        src="assets/images/burger.svg" /> </a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Header Menu -->
+<div class="modal fade" id="headerMenu" tabindex="-1" role="dialog" aria-labelledby="headerMenuLabel"
+    aria-hidden="true">
+    <div class="modal-dialog header-menu" role="document">
+        <div class="modal-content header-menu">
+            <div class="header --dark">
+                <div class="nesto-container">
+                    <div class="header__container">
+                        <img class="header__logo" src="assets/images/logo.svg" alt="nesto-logo" />
+
+                        <div class="header__nav">
+                            <a class="nav-item"> login </a>
+                            <a class="nav-item"> cart(0) </a>
+                            <a class="nav-item"> <img src="assets/images/search-white.png" /> </a>
+                            <a class="nav-item" data-bs-dismiss="modal"> <img src="assets/images/close.png" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- HOME LANDING -->
 <section class="home-landing">
@@ -26,10 +53,10 @@
 
             <div class="col-7">
                 <div class="home-landing__right-nav">
-                    <div class="nav-item">TITLES</div>
-                    <div class="nav-item">LIGHTING</div>
-                    <div class="nav-item active">INTERIOR</div>
-                    <div class="nav-item">DECORATION</div>
+                    <a class="nav-item">TITLES</a>
+                    <a class="nav-item">LIGHTING</a>
+                    <a class="nav-item active">INTERIOR</a>
+                    <a class="nav-item">DECORATION</a>
                 </div>
             </div>
         </div>
@@ -44,10 +71,10 @@
                 </h2>
 
                 <div class="home-landing__left-nav">
-                    <div class="nav-item active">seating</div>
-                    <div class="nav-item">table</div>
-                    <div class="nav-item">bed</div>
-                    <div class="nav-item">storage</div>
+                    <a class="nav-item active">seating</a>
+                    <a class="nav-item">table</a>
+                    <a class="nav-item">bed</a>
+                    <a class="nav-item">storage</a>
                 </div>
             </div>
 

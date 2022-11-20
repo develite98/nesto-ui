@@ -137,6 +137,19 @@
   }
 }
 
+.header.--dark {
+  height: 100vh;
+  background-color: var(--black-bg);
+  color: var(--text-on-black);
+  margin-bottom: unset;
+
+  .header__nav {
+    .nav-item {
+      color: var(--text-on-black);
+    }
+  }
+}
+
 .home-landing {
   &__title {
     margin-bottom: 2.375rem;
@@ -179,8 +192,19 @@
       text-align: right;
       margin-top: 1em;
       color: #bcbec0;
+      text-decoration: unset;
+      display: block;
+      cursor: pointer;
 
       &.active {
+        color: var(--text-on-white);
+      }
+
+      &:focus {
+        color: var(--text-on-white);
+      }
+
+      &:hover {
         color: var(--text-on-white);
       }
     }
@@ -199,8 +223,19 @@
       letter-spacing: 0em;
       text-align: center;
       color: #bcbec0;
+      text-decoration: unset;
+      cursor: pointer;
+      display: block;
 
       &.active {
+        color: var(--text-on-white);
+      }
+
+      &:focus {
+        color: var(--text-on-white);
+      }
+
+      &:hover {
         color: var(--text-on-white);
       }
     }
@@ -535,4 +570,16 @@
 .row {
   padding-left: unset !important;
   padding-right: unset !important;
+}
+
+.modal-dialog.header-menu {
+  max-width: 100vw !important;
+  margin: unset !important;
+}
+
+.modal-content.header-menu {
+  border: unset !important;
+  border-radius: unset !important;
+  width: 100vw;
+  height: 100vh;
 }
