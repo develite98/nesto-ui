@@ -12,6 +12,7 @@ import { PartnershipComponent } from './partnership/partnership.component';
 import { CareerComponent } from './career/career.component';
 import { FaqComponent } from './faq/faq.component';
 import { BlosComponent } from './blos/blos.component';
+import { SearchComponent } from './search/search.component';
 
 export const routes: Route[] = [
   {
@@ -51,6 +52,10 @@ export const routes: Route[] = [
     component: PartnershipComponent,
   },
   {
+    path: 'search',
+    component: SearchComponent,
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home',
@@ -73,6 +78,7 @@ export const routes: Route[] = [
     CareerComponent,
     FaqComponent,
     BlosComponent,
+    SearchComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

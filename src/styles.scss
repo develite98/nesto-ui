@@ -318,7 +318,7 @@
     background: none;
     color: var(--text-on-white);
     font-size: var(--input-font-size);
-    padding: 10px 10px 10px 5px;
+    padding: 10px 10px 10px 0px;
     display: block;
     width: 100%;
     border: none;
@@ -327,12 +327,22 @@
     &:focus {
       outline: none;
     }
+
     &:focus ~ label,
     &:valid ~ label {
-      top: 0px;
+      top: -10px;
       font-size: 8px;
       color: var(--text-on-white);
     }
+
+    &:valid ~ .icon {
+      display: none;
+    }
+
+    &:valid ~ .clear {
+      display: block;
+    }
+
     &:focus ~ .bar:before {
       width: 100%;
     }
@@ -370,10 +380,16 @@
     }
   }
 
-  .icon {
+  .icon,
+  .clear {
     position: absolute;
     right: 0px;
     top: 10px;
+    cursor: pointer;
+  }
+
+  .clear {
+    display: none;
   }
 }
 
