@@ -695,3 +695,31 @@ body.loaded {
     }
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .product-card {
+    &__image {
+      height: 300px;
+    }
+  }
+
+
+  .home-landing {
+    &__right-nav {
+      .nav-item {
+        margin-left: 30px;
+      }
+    }
+
+    &__left-nav {
+      .nav-item {
+        margin-top: 5px;
+        font-size: 1.25rem;
+      }
+    }
+
+    &__description {
+      margin-top: 70px;
+    }
+   }
+}
