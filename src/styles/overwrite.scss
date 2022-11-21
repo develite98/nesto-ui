@@ -279,8 +279,8 @@ body {
 }
 
 .nesto-container {
-  margin-right: 72px;
-  margin-left: 72px;
+  margin-right: var(--container-padding);
+  margin-left: var(--container-padding);
 }
 
 .container-right {

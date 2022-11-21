@@ -15,6 +15,7 @@
   --text-on-black: #ffffff;
   --input-font-size: 16px;
   --bs-gutter-x: 24px !important;
+  --container-padding: 72px;
 }
 
 .--dark {
@@ -193,7 +194,7 @@
       line-height: 28px;
       letter-spacing: 0em;
       text-align: right;
-      margin-top: 1em;
+      margin-top: 30px;
       color: #bcbec0;
       text-decoration: unset;
       display: block;
@@ -215,18 +216,19 @@
 
   &__right-nav {
     margin-bottom: 2rem;
-    padding-right: 72px;
+    padding-right: var(--container-padding);
 
     .nav-item {
       font-size: 18px;
       font-weight: 300;
       line-height: 21px;
       letter-spacing: 0em;
-      text-align: center;
+      text-align: end;
       color: #bcbec0;
       text-decoration: unset;
       cursor: pointer;
       display: block;
+      margin-left: 60px;
 
       &.active {
         color: var(--text-on-white);
@@ -677,5 +679,19 @@ span.currency {
 body.loaded {
   .page-loading {
     display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 1450px) {
+  :root {
+    --container-padding: 144px;
+  }
+
+  .product-card {
+    &__image {
+      height: 500px;
+    }
   }
 }
