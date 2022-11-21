@@ -697,6 +697,10 @@ body.loaded {
 }
 
 @media only screen and (max-width: 1280px) {
+  .gx-5 {
+    --bs-gutter-x: 5em !important;
+  }
+
   .product-card {
     &__image {
       height: 300px;
@@ -708,6 +712,7 @@ body.loaded {
     &__right-nav {
       .nav-item {
         margin-left: 30px;
+        font-size: 1.25rem;
       }
     }
 
@@ -719,7 +724,7 @@ body.loaded {
     }
 
     &__description {
-      margin-top: 70px;
+      margin-top: 50px;
     }
    }
 }
