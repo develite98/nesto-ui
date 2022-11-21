@@ -468,6 +468,8 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 21px;
+  display: block;
 
   a {
     color: inherit;
@@ -682,8 +684,6 @@ body.loaded {
   }
 }
 
-
-
 @media only screen and (min-width: 1700px) {
   :root {
     --container-padding: 144px;
@@ -707,7 +707,6 @@ body.loaded {
     }
   }
 
-
   .home-landing {
     &__right-nav {
       .nav-item {
@@ -726,5 +725,5 @@ body.loaded {
     &__description {
       margin-top: 50px;
     }
-   }
+  }
 }
